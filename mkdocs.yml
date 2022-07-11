@@ -1,0 +1,17 @@
+site_name: Dokumen Pertama
+theme:
+        name: material
+nav:
+    - Home: 'index.md'
+    - Manual MKDOCS: 'manmkdocs.md'
+    - Manual Git : 'man-git.md'
+    - 'User Guide':
+        - 'Writing your docs': 'writing-your-docs.md'
+        - 'Styling your docs': 'styling-your-docs.md'
+    - Menu1: 'menu1.md'
+    - Menu2: 'menu2.md'
+    - Menu3: 'menu3.md'
+    - Subfolder: 'subfolder/index.md'
+    - Submenu:
+            - Submenu1: 'submenu1.md'
+            - Submenu1: 'submenu1.md'
