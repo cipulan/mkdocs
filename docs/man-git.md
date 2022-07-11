@@ -292,3 +292,66 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 <p>To be continue&hellip;</p>
 
+<p>Manual dari materi git pada mkdocs yang di push ke git</p>
+
+<p>Buat repository baru di rujak.id dengan nama&nbsp;<strong>mkdocs</strong>. Lalu masuk ke directory project mkdocs yang sudah di buat sebelumnya pada dir&nbsp;<em>/home/ubuntu/mkdocs</em></p>
+
+<p>Lakukan&nbsp;<em><strong>git init</strong></em>&nbsp;agar membuat folder .git pada directory tersebut.</p>
+
+<pre>
+<code>ubuntu@ubuntu:~/mkdocs$ git init
+Initialized empty Git repository in /home/ubuntu/mkdocs/.git/
+</code></pre>
+
+<p>Cek dengan&nbsp;<em><strong>git status</strong></em>&nbsp;bahwa file-file di dalamnya sudah masuk ke &ldquo;<strong>Untracked files</strong>&rdquo;.</p>
+
+<pre>
+<code>ubuntu@ubuntu:~/mkdocs$ git status
+On branch master
+No commits yet
+Untracked files:
+ (use "git add &lt;file&gt;..." to include in what will be committed)
+docs/
+mkdocs.yml
+site/
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+
+<p>Lakukan command&nbsp;<em><strong>git add -A</strong></em>&nbsp;untuk menambahkan semua file dan lakukan commit.</p>
+
+<pre>
+<code>ubuntu@ubuntu:~/mkdocs$ git status
+On branch master
+No commits yet
+Changes to be committed:
+</code></pre>
+
+<pre>
+<code>ubuntu@ubuntu:~/mkdocs$ git commit -m "Initial commit"
+[master (root-commit) 00a2f51] Initial commit
+37 files changed, 7952 insertions(+)
+create mode 100644 docs/index.md
+</code></pre>
+
+<p>Lakukan&nbsp;<em><strong>git push</strong></em>&nbsp;untuk memasukkan file-file tersebut ke dalam repository&nbsp;<strong>mkdocs</strong>&nbsp;di rujak.id</p>
+
+<pre>
+<code>ubuntu@ubuntu:~/mkdocs$ git push https://rujak.id/saiful/mkdocs.git
+Username for 'https://rujak.id': saiful
+Password for 'https://saiful@rujak.id': 
+Enumerating objects: 47, done.
+Counting objects: 100% (47/47), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (47/47), 831.15 KiB | 6.11 MiB/s, done.
+Total 47 (delta 1), reused 0 (delta 0)
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To https://rujak.id/saiful/mkdocs.git
+* [new branch]      master -&gt; master
+</code></pre>
+
+<p>lalu cek kembali pada repository&nbsp;<a href="https://rujak.id/saiful/mkdocs.git" rel="noopener noreferrer" target="_blank">https://rujak.id/saiful/mkdocs.git</a>&nbsp;bahwa file-file sudah terupload.</p>
+
+<p><img alt="" src="https://taiga.rujak.id/media/attachments/3/b/0/5/fdc40ea7f106cff6184f7b3e42cf28f584de8c4ffabaedeb8498a070a6cf/saiful-mkdocs-mkdocs-gijak-git-with-a-rujak.png?token=YsuEEA%3AUBwoXupcvwsEd_6ol3Onu8aa_6H--J2tSlkytdUsWJRi2bWQJkVBoBm2zsxJlW4wEUaRDbn20_YMkrvMB0Aotg#_taiga-refresh=issue:12426" /></p>
+
