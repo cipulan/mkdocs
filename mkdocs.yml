@@ -15,3 +15,5 @@ nav:
     - Submenu:
             - Submenu1: 'submenu1.md'
             - Submenu1: 'submenu1.md'
+    - Menu Tambahan: 'tambah.md'
+    - Menu2 Tambahan: 'tambah2.md'
