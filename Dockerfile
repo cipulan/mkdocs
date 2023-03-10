@@ -2,7 +2,7 @@ FROM squidfunk/mkdocs-material
 
 EXPOSE 8000
 
-COPY docs /docs
+COPY docs /docs/docs
 COPY mkdocs.yml /docs
 WORKDIR /docs
 RUN pwd
