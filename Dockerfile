@@ -8,5 +8,5 @@ WORKDIR /docs
 # CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]
 
 # Start development server by default
-ENTRYPOINT ["mkdocs"]
+ENTRYPOINT ["docs"]
 CMD ["serve", "--dev-addr=0.0.0.0:8000"]
